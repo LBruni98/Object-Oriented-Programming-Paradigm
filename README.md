@@ -14,3 +14,9 @@ The character state is one single class to which all the other characters subcla
 Then we come to the elements of the game that determine specific characteristics of the game. In the game, there will be a combat section that the player will engage in and works by taking the player to a separate mode in the game that makes a player and NPC character fight. The class that makes up this section uses state design, as the player is essentially placed in an ‘inFight == True/False’ situation. Within this class, a separate set of classes are done to simulate the fighting and even has its own damage system that deals damage based on body part.
 
 ![State](https://github.com/LBruni98/Object-Oriented-Programming-Paradigm/blob/master/State.PNG)
+
+## 2. Implementing code with design patterns
+### 2.1 State Machine
+The code I built was a state machine for a gumball dispenser. The code can be found [here.](https://github.com/LBruni98/Gumball-State-Machine/blob/master/main.cpp)
+
+### 2.2 Code with a Design Pattern in Mind
