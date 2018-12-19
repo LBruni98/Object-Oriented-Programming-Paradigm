@@ -115,4 +115,22 @@ Once the machine runs out of gumballs, then a prompt will appear whether if the 
 
 ## 3. Design Patterns in a scenario
 ### 3.1 Range of Design Patterns
+Creational mainly focus on the method of creating objects. Focusing on a suitable manner for creating such objects, where just creating the object basically would cause problems or add complexity. Creational patterns do allow for a more organised method of object creation.
+One such creational Pattern is the builder that can build up complex objects by utilising the other subclasses. The representation between that of the objects in the main class and the representation are clear, with a good understanding of how the item works. As the design supports change, it can allow the user the ability to change the function workings, adding to flexibility.
+
+Structural Patterns are design patterns that work to provide effective solutions and stress the importance of class composition and object structures. Different structural patterns work with classes to create a program and doesn’t change the overall foundations of a system due to one part of said system.
+A known structural pattern is the bridge pattern, so called because it bridges the implementation and abstraction to create an independence between each other, implementing change with no negative consequence.
+
+Behavioural Patterns use the objects interaction and their responsibility to improve the communications between the class, allowing for additional flexibility of that communication. This provides easy communications with the object and the class and makes them loosely coupled between them.
+A specific pattern of this class is the state class, where the object changes behaviour based on its internal state. This can make for different functions to execute once a specific state has changed in one class if associated with that object responsible.
+
 ### 3.2 Patterns for a given scenario
+To determine what would make for an effective design pattern, you would have to consider the situation at hand. When developing an app, the pattern and the type of pattern would have to make the app work properly, but also considering other factors such as ease of development and the objects and classes involved.
+
+Two scenarios given to utilise specific design patterns were a game and a gumball dispenser. The gumball machine was more directed in supplying the user and notifying the user of the gumball machine’s availability, meaning we had to tell the user about the gumball stock, the turn of the cranks and if there is any money in there. All that to make the machine function.
+
+The appropriate design pattern to use here was the state pattern. As stated before the state pattern determined actions based on the states of each classes or objects. This was essential to create a user-friendly program that ensured the user of what was going on internally, displaying if there was a coin inside or if the user was entitled to a free gumball. The state machine was used as such, to give the user a gumball if the machine had a coin, base the number of cranks to a multiple of 10 to give a bonus gumball, etc.
+
+However, in the sense of the second scenario, the RPG game, the requirements were so diverse in terms of features that a single design pattern wouldn’t be enough to organise or make the program function.
+
+How this was done was to employ that of distinctive design patterns, however they aren’t the same in type. The state machine was used to determine if the player was in a battle, in a trade or in a specific city, allowing for creating functions based on the state the player was in. However, in terms of more difficult and more complex elements, I used the façade pattern, which allowed for a huge class to be made up of subclasses, but all linked to a huge class that allowed for different instances relating to a subclass but utilising the main class. This proved useful for the whole character dynamic, as the entire game’s characters would be made up of one base that the rest of the characters can use, meaning you would have an enemy or an NPC, which can be entirely different to one another but share the same stats between them.
