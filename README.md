@@ -112,3 +112,7 @@ Once the machine runs out of gumballs, then a prompt will appear whether if the 
 		}
 	}
 ```
+
+## 3. Design Patterns in a scenario
+### 3.1 Range of Design Patterns
+### 3.2 Patterns for a given scenario
